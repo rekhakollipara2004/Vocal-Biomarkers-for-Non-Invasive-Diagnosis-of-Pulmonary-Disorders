@@ -88,6 +88,9 @@ Audio Input
 ## 🚀 Future Work
 
 > 📱 **Real-time Deployment** — Deploy as a web or mobile application with digital stethoscope integration
+
 > ⚖️ **Improved Aggregation** — Replace majority voting with weighted voting or attention-based aggregation
+
 > 🗄️ **Expanded Dataset** — Include varied populations and rare disease classes
+
 > 📈 **Severity Prediction** — Improve using longitudinal patient data and risk scoring
