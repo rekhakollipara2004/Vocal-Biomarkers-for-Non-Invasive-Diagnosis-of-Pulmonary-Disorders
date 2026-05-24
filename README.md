@@ -76,25 +76,19 @@ Audio Input
 
 ---
 
-## 🔬 Methodology
+🔬 Methodology
 
-| Step | Phase | Description |
-|:----:|-------|-------------|
-| 1️⃣ | **Preprocessing** | Audio resampled to a common rate, trimmed/padded to fixed length, feature-normalized |
-| 2️⃣ | **Feature Extraction** | MFCC, Chroma, and Mel Spectrogram extracted per respiratory cycle |
-| 3️⃣ | **Model Training** | Adam optimizer + categorical cross-entropy, dropout regularization, early stopping |
-| 4️⃣ | **Class Balancing** | Stratified splits + class weight balancing to handle minority classes |
-| 5️⃣ | **Patient-Level Prediction** | Majority voting across all respiratory segments of a patient |
-| 6️⃣ | **Evaluation** | Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix |
-
+Preprocessing — Audio resampled to a common rate, trimmed/padded to fixed length, feature-normalized
+Feature Extraction — MFCC, Chroma, and Mel Spectrogram extracted per respiratory cycle
+Model Training — Adam optimizer + categorical cross-entropy, dropout regularization, early stopping
+Class Balancing — Stratified splits + class weight balancing to handle minority classes
+Patient-Level Prediction — Majority voting across all respiratory segments of a patient
+Evaluation — Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix
 ---
 
 ## 🚀 Future Work
 
 > 📱 **Real-time Deployment** — Deploy as a web or mobile application with digital stethoscope integration
-
 > ⚖️ **Improved Aggregation** — Replace majority voting with weighted voting or attention-based aggregation
-
 > 🗄️ **Expanded Dataset** — Include varied populations and rare disease classes
-
 > 📈 **Severity Prediction** — Improve using longitudinal patient data and risk scoring
