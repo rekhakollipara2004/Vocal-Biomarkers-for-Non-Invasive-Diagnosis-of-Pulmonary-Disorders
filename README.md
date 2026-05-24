@@ -75,15 +75,14 @@ Audio Input
 ![Librosa](https://img.shields.io/badge/Librosa-Audio%20Processing-blueviolet?style=flat-square)
 
 ---
-
-🔬 Methodology
-
-Preprocessing — Audio resampled to a common rate, trimmed/padded to fixed length, feature-normalized
-Feature Extraction — MFCC, Chroma, and Mel Spectrogram extracted per respiratory cycle
-Model Training — Adam optimizer + categorical cross-entropy, dropout regularization, early stopping
-Class Balancing — Stratified splits + class weight balancing to handle minority classes
-Patient-Level Prediction — Majority voting across all respiratory segments of a patient
-Evaluation — Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix
+## 🔬 Methodology
+ 
+1. **Preprocessing** — Audio resampled to a common rate, trimmed/padded to fixed length, feature-normalized
+2. **Feature Extraction** — MFCC, Chroma, and Mel Spectrogram extracted per respiratory cycle
+3. **Model Training** — Adam optimizer + categorical cross-entropy, dropout regularization, early stopping
+4. **Class Balancing** — Stratified splits + class weight balancing to handle minority classes
+5. **Patient-Level Prediction** — Majority voting across all respiratory segments of a patient
+6. **Evaluation** — Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix
 ---
 
 ## 🚀 Future Work
